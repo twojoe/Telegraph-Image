@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+    <meta name="format-detection" content="telephone=no"/>
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate"/>
+    ；
+    <title>test</title>
+
+
+    <script src="js/jquery.min.js"></script>
+    <style type="text/css">
+        .redDot{
+            background-color: red;
+            /*color: white;*/
+            display: inline-block;
+            width: 10px;
+            height: 10px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+<div style="text-align: center">
+    <div id="zhong">
+        <h3>test</h3>
+        <form style="display: none" action="user/up_avatar.php" method="post" enctype="multipart/form-data">
+            <input type="file" name="file" accept="image/jpeg,image/gif,image/png"/>
+            <input type="hidden" name="type" value="upFile">
+            <button type="submit">提交</button>
+        </form>
+        <form  action="/ss/action_app.php" method="post" >
+            <input type="hidden" name="id" value="23" /><br/>
+            <input type="hidden" name="type" value="getHello"><br/>
+            <input type="text" name="msg" value="你好，交个朋友。"><br/>
+            <button type="submit">提交</button>
+            <br/>
+        </form>
+        在线
+        <form  action="http://sai.joe6.top/msg/action.php" method="post" >
+            <input type="hidden" name="id" value="1" /><br/>
+            <input type="hidden" name="type" value="getMsg"><br/>
+            <input type="text" name="msg" value="你好，交个朋友。"><br/>
+            <button type="submit">提交</button>
+            <br/>
+        </form>
+
+
+        <span class="redDot"></span>
+    </div>
+</div>
+<script>
+   var arr=[1,2,3,4];
+   var arr1=arr.splice(1,1);
+    console.log(arr)
+    console.log(arr1)
+
+</script>
+
+</body>
+</html>
